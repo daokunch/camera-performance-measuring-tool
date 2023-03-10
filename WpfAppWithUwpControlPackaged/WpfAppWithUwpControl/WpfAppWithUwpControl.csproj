@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssetTargetFallback>uap10.0.18362</AssetTargetFallback>
+    <StartupObject>Program</StartupObject>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+    <PackageReference Include="CsvHelper" Version="30.0.0" />
+    <PackageReference Include="Microsoft.Toolkit.Wpf.UI.Controls" Version="6.1.2" />
+    <PackageReference Include="Microsoft.Toolkit.Wpf.UI.XamlHost" Version="6.1.2" />
+    <PackageReference Include="System.Management" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyUwpApp\MyUwpApp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>
